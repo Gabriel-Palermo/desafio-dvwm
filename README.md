@@ -26,9 +26,3 @@ O sistema utiliza o padrão **MVC**, migrations, Eloquent ORM e Blade Templates 
 - Views de criar/editar agora incluem **descrição e status**.
 
 ---
-
-## 🖥️ Como rodar o projeto
-1. Clonar o repositório  
-   ```bash
-   git clone https://github.com/SEU_USUARIO/gerenciador-tarefas.git
-   cd gerenciador-tarefas
