@@ -1,44 +1,34 @@
-*📝 Gerenciador de Tarefas (Laravel CRUD)*
+# 📝 Gerenciador de Tarefas (Laravel CRUD)
 
-Este projeto é um sistema simples de gerenciamento de tarefas desenvolvido em Laravel.
-Ele possui operações CRUD completas (Criar, Listar, Editar, Excluir) e agora conta com uma nova funcionalidade de status de tarefa com filtros e busca.
+Este é um projeto simples de **Gerenciador de Tarefas** desenvolvido em **Laravel**.  
+O sistema utiliza o padrão **MVC**, migrations, Eloquent ORM e Blade Templates para gerenciamento de tarefas.
 
-🚀 Funcionalidades
+---
 
-Criar, editar, listar e excluir tarefas.
+## 🚀 Funcionalidades
+- Criar, editar, listar e excluir tarefas.
+- Cada tarefa possui:
+  - **Título** (obrigatório)  
+  - **Descrição** (opcional)  
+  - **Status**: `pendente`, `em andamento` ou `concluída`.
+- **Marcar tarefa como concluída/reabrir** diretamente na listagem.
+- **Filtro por status** (todas, pendentes, em andamento, concluídas).
+- **Busca por título**.
+- Interface responsiva com **Bootstrap 5**.
 
-Cada tarefa possui:
+---
 
-Título (obrigatório)
+## 📂 Atualização mais recente
+- Adicionada coluna **status** na tabela `tarefas`.
+- Criado botão para **alternar status** (Concluir/Reabrir).
+- Implementado **filtro por status** na listagem.
+- Implementado **campo de busca** por título.
+- Views de criar/editar agora incluem **descrição e status**.
 
-Descrição (opcional)
+---
 
-Status: pendente, em andamento ou concluída.
-
-Marcar tarefa como concluída/reabrir direto na listagem.
-
-Filtro por status (pendentes, em andamento, concluídas, todas).
-
-Busca por título na lista de tarefas.
-
-Interface simples utilizando Blade Templates + Bootstrap 5.
-
-📂 Estrutura da Atualização
-
-Migration: adicionada coluna status na tabela tarefas.
-
-Model (Tarefa.php): liberado status e descricao em $fillable.
-
-Controller (TarefaController.php):
-
-Novo método toggle() para concluir/reabrir tarefa.
-
-Suporte a filtros e busca no método index().
-
-Views:
-
-index.blade.php: adicionados botão concluir/reabrir, filtro e busca.
-
-create.blade.php e edit.blade.php: adicionados campos de descrição e status.
-
-show.blade.php: exibindo também descrição e status.
+## 🖥️ Como rodar o projeto
+1. Clonar o repositório  
+   ```bash
+   git clone https://github.com/SEU_USUARIO/gerenciador-tarefas.git
+   cd gerenciador-tarefas
