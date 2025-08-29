@@ -1,4 +1,4 @@
-📝 Gerenciador de Tarefas (Laravel CRUD)
+*📝 Gerenciador de Tarefas (Laravel CRUD)*
 
 Este projeto é um sistema simples de gerenciamento de tarefas desenvolvido em Laravel.
 Ele possui operações CRUD completas (Criar, Listar, Editar, Excluir) e agora conta com uma nova funcionalidade de status de tarefa com filtros e busca.
